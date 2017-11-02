@@ -12,7 +12,7 @@
         <!--Dad Joke-->
         <scene sceneID="ANM-Z0-woV">
             <objects>
-                <viewController id="zO5-r6-BG5" sceneMemberID="viewController">
+                <viewController id="zO5-r6-BG5" customClass="DadJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ftu-s4-vfz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,10 @@
                                     <segue destination="FWN-hJ-Ddj" kind="show" id="xgV-RM-GIS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-u8-qZx">
+                                <rect key="frame" x="67" y="233" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumFontSize="4" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-vQ-oEu">
                                 <rect key="frame" x="48" y="0.0" width="279" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -45,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="-1367.2" y="666.11694152923542"/>
         </scene>
-        <!--First View Controller-->
+        <!--Dad Joke-->
         <scene sceneID="rBH-Hz-uLF">
             <objects>
                 <viewController id="FWN-hJ-Ddj" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,6 +76,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="5Sv-Ob-RsZ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dad Joke" id="Rwf-hg-3zH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUk-3J-VXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +86,7 @@
         <!--Pun-->
         <scene sceneID="HSA-ql-VNF">
             <objects>
-                <viewController id="8uF-5p-kvR" sceneMemberID="viewController">
+                <viewController id="8uF-5p-kvR" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ALy-y8-9kb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,14 +103,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="hGh-dC-1qv" kind="show" id="4gW-TV-QhI"/>
+                                    <action selector="showAnswer:" destination="8uF-5p-kvR" eventType="touchUpInside" id="liO-sf-spr"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLt-Pk-rsu">
+                                <rect key="frame" x="67" y="244" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="BN4-LG-ouk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" id="IWp-PL-3AX"/>
+                    <connections>
+                        <outlet property="answerImg" destination="jLt-Pk-rsu" id="mTS-WG-8dI"/>
+                        <outlet property="nextBack" destination="yoD-Qk-0CM" id="Xuq-L2-NSX"/>
+                        <outlet property="questionBox" destination="tNg-YM-7KE" id="TnS-hP-FYi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGj-vz-10u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,13 +145,6 @@
                                     <action selector="BackPressed:" destination="hGh-dC-1qv" eventType="touchUpInside" id="Itf-Ic-iiH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fshhhh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-7u-jNG">
-                                <rect key="frame" x="35" y="377" width="305" height="84"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="XuW-Az-Wg1"/>
@@ -149,7 +157,7 @@
         <!--Good-->
         <scene sceneID="K18-AP-ZPo">
             <objects>
-                <viewController id="SGS-fk-9JN" userLabel="Good" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SGS-fk-9JN" userLabel="Good" customClass="GoodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D7G-8R-1fd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,9 +167,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="rEp-Pb-Q6h" kind="show" id="cIk-fH-xMK"/>
+                                    <action selector="ShowAnswer:" destination="SGS-fk-9JN" eventType="touchUpInside" id="vx2-kd-h1q"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yp-0a-OfJ">
+                                <rect key="frame" x="67" y="264" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A guy walks into a bar and sustains a mild concussion" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-Ho-evQ">
                                 <rect key="frame" x="36" y="90" width="303" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -174,15 +186,20 @@
                         <viewLayoutGuide key="safeArea" id="v1Q-FC-pBT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good " id="jqV-Gt-gqU"/>
+                    <connections>
+                        <outlet property="answerImg" destination="7Yp-0a-OfJ" id="ReH-Yn-FPa"/>
+                        <outlet property="nextBack" destination="TsO-BK-VZT" id="3XN-66-Ejn"/>
+                        <outlet property="questionBox" destination="MKe-Ho-evQ" id="YEn-Iv-bBW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5e-kS-8Xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1367.2" y="-932.38380809595208"/>
         </scene>
-        <!--First View Controller-->
+        <!--Good View Controller-->
         <scene sceneID="UW1-QM-eo2">
             <objects>
-                <viewController id="rEp-Pb-Q6h" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rEp-Pb-Q6h" customClass="GoodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GY4-Q8-rAk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,7 +248,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1280" height="640"/>
+        <image name="Image" width="486" height="310"/>
         <image name="bar" width="680" height="453"/>
     </resources>
 </document>

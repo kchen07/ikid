@@ -14,6 +14,8 @@
 		45E896111FA97D0C00A3C1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E896101FA97D0C00A3C1A5 /* Assets.xcassets */; };
 		45E896141FA97D0C00A3C1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E896121FA97D0C00A3C1A5 /* LaunchScreen.storyboard */; };
 		45E8961C1FA98CD400A3C1A5 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8961B1FA98CD400A3C1A5 /* GoodViewController.swift */; };
+		45E8961E1FABAF0E00A3C1A5 /* SwitchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8961D1FABAF0E00A3C1A5 /* SwitchingViewController.swift */; };
+		45E896201FABBE7A00A3C1A5 /* DadJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8961F1FABBE7A00A3C1A5 /* DadJokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		45E896131FA97D0C00A3C1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E896151FA97D0C00A3C1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E8961B1FA98CD400A3C1A5 /* GoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		45E8961D1FABAF0E00A3C1A5 /* SwitchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewController.swift; sourceTree = "<group>"; };
+		45E8961F1FABBE7A00A3C1A5 /* DadJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				45E8960B1FA97D0C00A3C1A5 /* SecondViewController.swift */,
 				45E8961B1FA98CD400A3C1A5 /* GoodViewController.swift */,
 				45E8960D1FA97D0C00A3C1A5 /* Main.storyboard */,
+				45E8961F1FABBE7A00A3C1A5 /* DadJokeViewController.swift */,
+				45E8961D1FABAF0E00A3C1A5 /* SwitchingViewController.swift */,
 				45E896101FA97D0C00A3C1A5 /* Assets.xcassets */,
 				45E896121FA97D0C00A3C1A5 /* LaunchScreen.storyboard */,
 				45E896151FA97D0C00A3C1A5 /* Info.plist */,
@@ -146,6 +152,8 @@
 				45E896081FA97D0C00A3C1A5 /* AppDelegate.swift in Sources */,
 				45E8960A1FA97D0C00A3C1A5 /* FirstViewController.swift in Sources */,
 				45E8961C1FA98CD400A3C1A5 /* GoodViewController.swift in Sources */,
+				45E8961E1FABAF0E00A3C1A5 /* SwitchingViewController.swift in Sources */,
+				45E896201FABBE7A00A3C1A5 /* DadJokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
