@@ -41,9 +41,8 @@ class DadJokeViewController: UIViewController {
             answerImg.image = nil
             nextBack.setTitle("back", for: .normal)
             UIView.setAnimationTransition(.flipFromRight, for: view, cache:true)
-
-            
         }
+        UIView.commitAnimations()
     }
     /*
     // MARK: - Navigation
