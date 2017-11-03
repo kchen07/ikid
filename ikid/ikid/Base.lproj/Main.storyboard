@@ -61,40 +61,6 @@
             </objects>
             <point key="canvasLocation" x="-1367.2" y="666.11694152923542"/>
         </scene>
-        <!--Dad Joke-->
-        <scene sceneID="rBH-Hz-uLF">
-            <objects>
-                <viewController id="FWN-hJ-Ddj" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DJ0-Gz-qqB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpI-IK-9x1">
-                                <rect key="frame" x="22" y="588" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="BackPressed:" destination="FWN-hJ-Ddj" eventType="touchUpInside" id="pJz-a6-YV1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The outside" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KrO-l1-fgx">
-                                <rect key="frame" x="52" y="280" width="271" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="5Sv-Ob-RsZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dad Joke" id="Rwf-hg-3zH"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SUk-3J-VXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="665.21739130434787"/>
-        </scene>
         <!--Pun-->
         <scene sceneID="HSA-ql-VNF">
             <objects>
@@ -144,35 +110,6 @@
             </objects>
             <point key="canvasLocation" x="-1370.4000000000001" y="-145.27736131934034"/>
         </scene>
-        <!--First View Controller-->
-        <scene sceneID="KN6-s0-AeO">
-            <objects>
-                <viewController id="hGh-dC-1qv" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Yc-dO-RlD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="NBx-8u-lmd">
-                                <rect key="frame" x="67" y="201" width="241" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-n0-GOf">
-                                <rect key="frame" x="35" y="591" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="BackPressed:" destination="hGh-dC-1qv" eventType="touchUpInside" id="Itf-Ic-iiH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="XuW-Az-Wg1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KVq-JZ-q1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="-144.3778110944528"/>
-        </scene>
         <!--Good-->
         <scene sceneID="K18-AP-ZPo">
             <objects>
@@ -189,9 +126,12 @@
                                     <action selector="ShowAnswer:" destination="SGS-fk-9JN" eventType="touchUpInside" id="vx2-kd-h1q"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yp-0a-OfJ">
-                                <rect key="frame" x="67" y="264" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yp-0a-OfJ">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XoF-VD-2ZX"/>
+                                    <constraint firstAttribute="height" constant="128" id="qJP-w1-6qk"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A guy walks into a bar and sustains a mild concussion" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-Ho-evQ">
                                 <rect key="frame" x="36" y="90" width="303" height="476"/>
@@ -202,6 +142,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Yp-0a-OfJ" firstAttribute="centerY" secondItem="D7G-8R-1fd" secondAttribute="centerY" id="vh0-x6-Bo9"/>
+                            <constraint firstItem="7Yp-0a-OfJ" firstAttribute="centerX" secondItem="D7G-8R-1fd" secondAttribute="centerX" id="zRI-l9-0pp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v1Q-FC-pBT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good " id="jqV-Gt-gqU"/>
@@ -214,37 +158,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5e-kS-8Xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1367.2" y="-932.38380809595208"/>
-        </scene>
-        <!--Good View Controller-->
-        <scene sceneID="UW1-QM-eo2">
-            <objects>
-                <viewController id="rEp-Pb-Q6h" customClass="GoodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GY4-Q8-rAk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufR-3X-Jw0">
-                                <rect key="frame" x="22" y="579" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="BackPressed:" destination="rEp-Pb-Q6h" eventType="touchUpInside" id="fq0-ht-Jby"/>
-                                    <action selector="pressedBack:" destination="B2o-4m-e3i" eventType="touchUpInside" id="gfo-Vr-oar"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-UE-NPv">
-                                <rect key="frame" x="56.5" y="245.5" width="258" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="Ylh-5N-eJn"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MEt-Z4-0om" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="B2o-4m-e3i" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="-932.38380809595208"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AX7-ma-cDE">
@@ -266,8 +179,4 @@
             <point key="canvasLocation" x="-2327" y="-144"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Image" width="486" height="310"/>
-        <image name="bar" width="680" height="453"/>
-    </resources>
 </document>
