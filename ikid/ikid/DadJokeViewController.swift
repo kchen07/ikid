@@ -39,7 +39,7 @@ class DadJokeViewController: UIViewController {
             answer = false
             questionBox.text = "Which size does the chicken have the most feathers?"
             answerImg.image = nil
-            nextBack.setTitle("back", for: .normal)
+            nextBack.setTitle("next", for: .normal)
             UIView.setAnimationTransition(.flipFromRight, for: view, cache:true)
         }
         UIView.commitAnimations()
