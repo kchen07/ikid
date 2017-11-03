@@ -17,18 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEG-Jn-Skb">
-                                <rect key="frame" x="320" y="588" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="FWN-hJ-Ddj" kind="show" id="xgV-RM-GIS"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-u8-qZx">
-                                <rect key="frame" x="67" y="233" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumFontSize="4" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-vQ-oEu">
                                 <rect key="frame" x="48" y="0.0" width="279" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -38,12 +26,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-u8-qZx">
+                                <rect key="frame" x="67" y="228.5" width="240" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="Hoq-B1-BGc"/>
+                                    <constraint firstAttribute="width" constant="240" id="k0b-1E-M50"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEG-Jn-Skb">
+                                <rect key="frame" x="305" y="588" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="ShowAnswer:" destination="zO5-r6-BG5" eventType="touchUpInside" id="nju-A8-EC3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hK1-u8-qZx" firstAttribute="centerX" secondItem="Ftu-s4-vfz" secondAttribute="centerX" id="BhR-4c-Pyw"/>
+                            <constraint firstItem="hK1-u8-qZx" firstAttribute="centerY" secondItem="Ftu-s4-vfz" secondAttribute="centerY" id="Vj2-kH-1Vk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hLp-w2-Fxv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Joke" id="uBs-Il-ZPi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerImg" destination="hK1-u8-qZx" id="M5j-E6-U3K"/>
+                        <outlet property="nextBack" destination="rEG-Jn-Skb" id="P2s-gj-4GY"/>
+                        <outlet property="questionBox" destination="GgG-vQ-oEu" id="1eR-CJ-2b0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMA-ab-42y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,19 +111,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoD-Qk-0CM">
-                                <rect key="frame" x="327" y="588" width="32" height="30"/>
+                                <rect key="frame" x="308" y="588" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="8uF-5p-kvR" eventType="touchUpInside" id="liO-sf-spr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLt-Pk-rsu">
-                                <rect key="frame" x="67" y="244" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLt-Pk-rsu">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="YTd-qA-rdd"/>
+                                    <constraint firstAttribute="height" constant="128" id="nme-xo-EUJ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jLt-Pk-rsu" firstAttribute="centerX" secondItem="ALy-y8-9kb" secondAttribute="centerX" id="43m-aC-dur"/>
+                            <constraint firstItem="jLt-Pk-rsu" firstAttribute="centerY" secondItem="ALy-y8-9kb" secondAttribute="centerY" id="xVM-QZ-Y4q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BN4-LG-ouk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" id="IWp-PL-3AX"/>
@@ -163,7 +182,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsO-BK-VZT">
-                                <rect key="frame" x="327" y="574" width="32" height="30"/>
+                                <rect key="frame" x="308" y="574" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
